@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600;800&display=swap");
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 body {
     scroll-behavior: smooth;
     width: 100%;
-    font-family: 'Lato';
+    font-family: "Lato";
     margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ img {
 }
 
 header {
-    background:#222222;
+    background: #222222;
 }
 
 .header {
@@ -56,13 +56,15 @@ header {
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    background-color:#F16D7F;
+    background-color: #f16d7f;
     font-size: 12px;
     font-weight: 400;
     justify-content: center;
     align-items: center;
 }
-.search, .logo, .menu{
+.search,
+.logo,
+.menu {
     border: none;
     background: #222222;
     cursor: pointer;
@@ -70,43 +72,56 @@ header {
     margin-bottom: 19px;
 }
 .pre {
-    background: #F1E4E6;
+    background: #f1e4e6;
     position: relative;
 }
 .menu__burger {
     position: absolute;
     right: 0;
     top: 0;
+    width: 232px;
+    background-color: #ffffff;
+    box-shadow: 6px 4px 35px 0px #00000036;
+}
+.menu__x {
+    position: relative;
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    width: 232px;
-    background-color: #FFFFFF;
     padding: 32px 0 32px 32px;
     gap: 20px;
-    box-shadow: 6px 4px 35px 0px #00000036;
 }
-.menu__burger h5 {
+.x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.menu__x h5 {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16.8px;
 }
-.menu__burger p {
-    color: #F16D7F;
+.menu__x p {
+    color: #f16d7f;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.8px;
 }
-.menu__burger li {
-    color: #6F6E6E;
+.menu__x li {
+    color: #6f6e6e;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.8px;
     padding-left: 20px;
     padding-top: 11px;
 }
-.man, .woman, .kids {
+.man,
+.woman,
+.kids {
     display: flex;
     gap: 11px;
     flex-direction: column;
@@ -125,7 +140,7 @@ header {
     font-size: 32px;
     line-height: 38.4px;
     color: #222222;
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid #f16d7f;
     max-width: 405px;
     padding-left: 16px;
     margin-top: 289.9px;
@@ -138,7 +153,7 @@ header {
 }
 
 .fashion {
-    color: #F16D7F;
+    color: #f16d7f;
 }
 
 .grid {
@@ -195,7 +210,7 @@ header {
 }
 
 .bop h4 {
-    color: #F16D7F;
+    color: #f16d7f;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;
@@ -222,7 +237,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 16.8px;
-    color: #9F9F9F;
+    color: #9f9f9f;
 }
 
 .grid__product {
@@ -236,7 +251,7 @@ header {
 .card__hover {
     display: flex;
     position: absolute;
-    background: #3A3838DB;
+    background: #3a3838db;
     width: 360px;
     height: 420px;
     align-content: center;
@@ -252,14 +267,14 @@ header {
 }
 .card__hover button {
     display: flex;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     background-color: rgba(0, 0, 0, 0);
     width: 139px;
     padding: 11px 11px;
     justify-content: center;
     align-items: center;
     gap: 11px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 400px;
     line-height: 16.8px;
@@ -269,7 +284,7 @@ header {
 .cards {
     position: relative;
 }
-.cards{
+.cards {
     cursor: pointer;
 }
 
@@ -289,14 +304,14 @@ header {
     font-weight: 300;
     font-size: 14px;
     line-height: 16.8px;
-    color: #5D5D5D;
+    color: #5d5d5d;
 }
 
 .card__price {
     font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
-    color: #F16D7F;
+    color: #f16d7f;
 }
 
 .pad {
@@ -304,7 +319,7 @@ header {
     flex-direction: column;
     padding: 24px 29.26px 24px 16px;
     gap: 16px;
-    background: #F8F8F8;
+    background: #f8f8f8;
 }
 
 .pad h6 {
@@ -319,19 +334,19 @@ header {
 }
 
 .btn__all__product {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
-    color: #F26376;
+    color: #f26376;
     padding: 15px 39px 14px 39px;
-    border: 2px solid #FF6A6A;
+    border: 2px solid #ff6a6a;
     cursor: pointer;
     background: white;
 }
 
 .btn__all__product:hover {
-    background-color: #FF6A6A;
+    background-color: #ff6a6a;
     color: white;
 }
 
@@ -346,7 +361,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    color: #FBFBFB;
+    color: #fbfbfb;
 }
 
 .predlog__pad {
@@ -370,7 +385,7 @@ header {
     font-weight: 300;
     font-size: 13.97px;
     line-height: 16.77px;
-    color: #FBFBFB;
+    color: #fbfbfb;
 }
 
 .subscribe {
@@ -432,7 +447,7 @@ header {
     max-width: 256px;
     min-height: 49px;
     border: none;
-    background: #E1E1E1;
+    background: #e1e1e1;
     border-radius: 20px 0px 0px 20px;
     padding-left: 22px;
     font-weight: 400;
@@ -440,11 +455,11 @@ header {
 }
 
 .btn__subscribe {
-    font-family: 'Lato';
+    font-family: "Lato";
     border: none;
     cursor: pointer;
-    background: #F16D7F;
-    color: #FFFFFF;
+    background: #f16d7f;
+    color: #ffffff;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.8px;
@@ -455,7 +470,7 @@ header {
 
 footer {
     background: #222224;
-    color: #FBFBFB;
+    color: #fbfbfb;
     font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
@@ -477,7 +492,7 @@ footer {
 
 .fipt {
     cursor: pointer;
-    background: #FFFFFF;
+    background: #ffffff;
     width: 32px;
     height: 32px;
     display: flex;
@@ -489,112 +504,115 @@ footer {
     fill: white;
 }
 .fipt:hover {
-    background-color: #F16D7F;
+    background-color: #f16d7f;
+}
+.hidden__menu {
+    display: none;
 }
 
-@media(max-width: 1139px) and (min-width: 768px) {
-        body {
-            max-width: 1139px;
-        }
-        .container {
-            max-width: 736px;
-        }
-        .header {
+@media (max-width: 1139px) and (min-width: 768px) {
+    body {
+        max-width: 1139px;
+    }
+    .container {
+        max-width: 736px;
+    }
+    .header {
         padding-left: 32px;
         padding-right: 32px;
-        }
-        .preview {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 39px;
-        }
-        .preview__div {
-            max-width: 736px;
-        }
-        .preview__text {
-            font-size: 24px;
-            line-height: 28.8px;
-            padding-left: 39px;
-            margin-top: 138px;
-            min-width: 311px;
-        }
-        .brand {
-            font-size: 44px;
-            line-height: 52.8px;
-        }
-        .grid {
-            gap: 20px;
-        }
-        .item__size {
-            max-width: 232px;
-            min-height: 167px;
-        }
-        .item1 {
-            background-size: cover;
-        }
-        .item2 {
-            background-size: cover;
-        }
-        .item3 {
-            background-size: cover;
-        }
-        .item4__long {
-            background-size: cover;
-            max-width: 734px;
-            min-height: 116px;
-        }
-        .product {
-            margin-top: 110px;
-        }
-        .product__intro {
-            margin-bottom: 72px;
-        }
-        .grid__product {
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-        .all__product {
-            margin-bottom: 65px;
-        }
-        .predlog {
-            padding: 48px 0 64px 0;
-        }
-        .predlog__cont {
-            flex-direction: column;
-            align-content: center;
-            gap: 48px;
-        }
-        .subscribe__cont {
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            padding-top: 64px;
-            padding-bottom: 140px;
-            gap: 48px;
-        }
-        .subscribe__cont img {
-            height: 96px;
-            width: 96px;
-        }
-        .subscribe__cont h5 {
-            margin-bottom: 27px;
-        }
-        .footer__cont {
-            padding: 30px 32px;
-        }
-        .menu__burger {
-            display: none;
-        }
-        .subscribe {
-            background-image: url(./img/Backp.jpg);
-}
+    }
+    .preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 39px;
+    }
+    .preview__div {
+        max-width: 736px;
+    }
+    .preview__text {
+        font-size: 24px;
+        line-height: 28.8px;
+        padding-left: 39px;
+        margin-top: 138px;
+        min-width: 311px;
+    }
+    .brand {
+        font-size: 44px;
+        line-height: 52.8px;
+    }
+    .grid {
+        gap: 20px;
+    }
+    .item__size {
+        max-width: 232px;
+        min-height: 167px;
+    }
+    .item1 {
+        background-size: cover;
+    }
+    .item2 {
+        background-size: cover;
+    }
+    .item3 {
+        background-size: cover;
+    }
+    .item4__long {
+        background-size: cover;
+        max-width: 734px;
+        min-height: 116px;
+    }
+    .product {
+        margin-top: 110px;
+    }
+    .product__intro {
+        margin-bottom: 72px;
+    }
+    .grid__product {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    .all__product {
+        margin-bottom: 65px;
+    }
+    .predlog {
+        padding: 48px 0 64px 0;
+    }
+    .predlog__cont {
+        flex-direction: column;
+        align-content: center;
+        gap: 48px;
+    }
+    .subscribe__cont {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-top: 64px;
+        padding-bottom: 140px;
+        gap: 48px;
+    }
+    .subscribe__cont img {
+        height: 96px;
+        width: 96px;
+    }
+    .subscribe__cont h5 {
+        margin-bottom: 27px;
+    }
+    .footer__cont {
+        padding: 30px 32px;
+    }
+    .menu__burger {
+        display: none;
+    }
+    .subscribe {
+        background-image: url(./img/Backp.jpg);
+    }
 }
 
 @media (max-width: 767px) {
     body {
-        max-width: 767px
+        max-width: 767px;
     }
     .hidden {
         display: none;
@@ -667,7 +685,7 @@ footer {
         padding-top: 43px;
         padding-bottom: 9px;
     }
-        .subscribe {
-            background-image: url(./img/Backt.jpg);
+    .subscribe {
+        background-image: url(./img/Backt.jpg);
     }
 }
