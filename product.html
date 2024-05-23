@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Магазин одежды</title>
+        <title>Продукт</title>
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,14 +13,13 @@
             rel="stylesheet" />
         <script src="./script.js" defer></script>
     </head>
-
     <body>
         <header>
             <section class="header container">
                 <div class="logo__search">
                     <button class="logo">
                         <a href="./index.html"
-                            ><img src="./img/logo.png" alt="logo"
+                            ><img class="logo" src="./img/logo.png" alt="logo"
                         /></a>
                     </button>
                     <button class="search">
@@ -42,23 +41,8 @@
                     <div class="five hidden"><span>5</span></div>
                 </div>
             </section>
-        </header>
-        <main>
             <section class="pre">
                 <div class="preview">
-                    <img
-                        class="hidden"
-                        src="./img/Preview_mag.png"
-                        alt="preview" />
-                    <div class="preview__div">
-                        <div class="preview__text">
-                            <h1>
-                                <span class="brand">THE BRAND<br /></span
-                                >OF&nbsp;LUXERIOUS
-                                <span class="fashion">FASHION</span>
-                            </h1>
-                        </div>
-                    </div>
                     <div class="menu__burger hidden hidden__menu">
                         <div class="menu__x">
                             <button class="x">
@@ -99,81 +83,109 @@
                     </div>
                 </div>
             </section>
-            <section class="grid container">
-                <div class="item1 item__size">
-                    <a href="./product.html"
-                        ><div class="bop">
-                            <div class="item1__text">
-                                <p>30% OFF</p>
-                                <h4>FOR WOMEN</h4>
-                            </div>
-                        </div></a
-                    >
-                </div>
-                <div class="item2 item__size">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item2__text">
-                                <p>HOT DEAL</p>
-                                <h4>FOR MEN</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="item3 item__size">
-                    <a href="./product.html">
-                        <div class="bop">
-                            <div class="item3__text">
-                                <p>NEW ARRIVALS</p>
-                                <h4>FOR KIDS</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                    <div class="item4__long">
-                        <a href="./product.html">
-                            <div class="bop">
-                                <div class="item4__long__text">
-                                    <p>LUXIROUS &amp;&nbsp;TRENDY</p>
-                                    <h4>ACCESORIES</h4>
-                                </div>
-                            </div>
-                        </a>
+        </header>
+        <nav>
+            <div class="nav container">
+                <h1>NEW ARRIVALS</h1>
+                <ul class="breadcrumb">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li>NEW ARRIVALS</li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="product-slider">
+                <button class="product-slider__btn">
+                    <svg
+                        width="13"
+                        height="23"
+                        viewBox="0 0 13 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <img
+                    class="product-slider__img"
+                    src="./img/product1.jpg"
+                    alt="" />
+                <button class="product-slider__btn product-slider__btn_r">
+                    <svg
+                        width="13"
+                        height="23"
+                        viewBox="0 0 13 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z"
+                            fill="black" />
+                    </svg>
+                </button>
+            </section>
+            <section class="product-description">
+                <div class="pd container">
+                    <h5>WOMEN COLLECTION</h5>
+                    <div class="pd__line"></div>
+                    <h4>MOSCHINO CHEAP AND CHIC</h4>
+                    <p>
+                        Compellingly actualize fully researched processes before
+                        proactive outsourcing. <br />Progressively syndicate
+                        collaborative architectures before cutting-edge
+                        services. Completely<br />visualize parallel core
+                        competencies rather than exceptional portals.
+                    </p>
+                    <h3>$561</h3>
+                    <hr />
+                    <div class="pd__variable">
+                        <select name="pd__variable_s" class="pd__variable_s">
+                            <option value="s1" disabled selected hidden>
+                                CHOOSE COLOR
+                            </option>
+                            <option value="s2">Blue</option>
+                            <option value="s3">Red</option>
+                            <option value="s4">Green</option>
+                        </select>
+                        <select name="pd__variable_s" class="pd__variable_s">
+                            <option disabled selected hidden value="s1">
+                                CHOOSE SIZE
+                            </option>
+                            <option value="s2">M</option>
+                            <option value="s3">L</option>
+                            <option value="s4">XL</option>
+                        </select>
+                        <select name="pd__variable_s" class="pd__variable_s">
+                            <option disabled selected hidden value="s1">
+                                QUANTITY
+                            </option>
+                            <option value="s2">One</option>
+                            <option value="s3">Two</option>
+                            <option value="s4">Three</option>
+                        </select>
                     </div>
+                    <div class="pd__btn">
+                        <button>
+                            <svg
+                                width="32"
+                                height="29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.2 29a2.477 2.477 0 1 1 .201 0h-.2ZM6.754 26.32a2.68 2.68 0 1 1 5.364 0 2.68 2.68 0 0 1-5.366 0h.002Zm3.8-5.634a1.184 1.184 0 0 1-1.145-.867L4.575 2.364H1.182a1.182 1.182 0 0 1 0-2.364h4.281a1.183 1.183 0 0 1 1.144.868l4.833 17.455h13.178L29 8.275h-14.6a1.183 1.183 0 1 1 0-2.365h16.413a1.178 1.178 0 0 1 .986.533 1.191 1.191 0 0 1 .1 1.122l-5.405 12.412a1.185 1.185 0 0 1-1.084.709H10.553Z"
+                                    fill="#EF5B70" />
+                            </svg>
+                            Add to&nbsp;Cart
+                        </button>
+                    </div>
+                </div>
             </section>
             <section class="product container">
-                <div class="product__intro">
-                    <h4>Fetured Items</h4>
-                    <p>
-                        Shop for items based on&nbsp;what we&nbsp;featured
-                        in&nbsp;this week
-                    </p>
-                </div>
-                <div class="grid__product">
-                    <div class="card1 cards">
-                        <img src="./img/P_1.jpg" alt="" />
-                        <div class="card1__text pad">
-                            <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
-                            <p class="card__info">
-                                Known for her sculptural takes
-                                on&nbsp;traditional tailoring, Australian
-                                arbiter of&nbsp;cool Kym Ellery teams
-                                up&nbsp;with Moda Operandi.
-                            </p>
-                            <p class="card__price">$52.00</p>
-                            <div class="card__hover">
-                                <div class="card__hover__button">
-                                    <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card2 cards">
-                        <img src="./img/P_2.jpg" alt="" />
-                        <div class="card2__text pad">
+                <div class="grid__product product__grid">
+                    <div class="card4 cards">
+                        <img src="./img/P_4.jpg" alt="" />
+                        <div class="card4__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
                                 Known for her sculptural takes
@@ -213,48 +225,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card4 cards">
-                        <img src="./img/P_4.jpg" alt="" />
-                        <div class="card4__text pad">
-                            <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
-                            <p class="card__info">
-                                Known for her sculptural takes
-                                on&nbsp;traditional tailoring, Australian
-                                arbiter of&nbsp;cool Kym Ellery teams
-                                up&nbsp;with Moda Operandi.
-                            </p>
-                            <p class="card__price">$52.00</p>
-                            <div class="card__hover">
-                                <div class="card__hover__button">
-                                    <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card5 cards">
-                        <img src="./img/P_5.jpg" alt="" />
-                        <div class="card5__text pad">
-                            <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
-                            <p class="card__info">
-                                Known for her sculptural takes
-                                on&nbsp;traditional tailoring, Australian
-                                arbiter of&nbsp;cool Kym Ellery teams
-                                up&nbsp;with Moda Operandi.
-                            </p>
-                            <p class="card__price">$52.00</p>
-                            <div class="card__hover">
-                                <div class="card__hover__button">
-                                    <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="card6 cards">
                         <img src="./img/P_6.jpg" alt="" />
                         <div class="card6__text pad">
@@ -275,44 +245,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="all__product container">
-                    <a href="./catalog.html"
-                        ><button class="btn__all__product">
-                            Browse All Product
-                        </button></a
-                    >
-                </div>
-            </section>
-            <section class="predlog">
-                <div class="predlog__cont container">
-                    <div class="delivery predlog__pad">
-                        <img src="./img/Delivery.svg" alt="" />
-                        <h5>Free Delivery</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
-                    </div>
-                    <div class="sales predlog__pad">
-                        <img src="./img/Sales.svg" alt="" />
-                        <h5>Sales &amp;&nbsp;discounts</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
-                    </div>
-                    <div class="quality predlog__pad">
-                        <img src="./img/Quality.svg" alt="" />
-                        <h5>Quality assurance</h5>
-                        <p>
-                            Worldwide delivery on&nbsp;all. Authorit tively
-                            morph next-generation innov tion with extensive
-                            models.
-                        </p>
                     </div>
                 </div>
             </section>

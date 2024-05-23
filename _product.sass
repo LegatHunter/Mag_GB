@@ -1,0 +1,134 @@
+$textColorRed: #F16D7F
+$textColorRed2: #EF5B70
+$textColor: #4D4D4D
+
+
+nav
+    background: #F8F3F4
+
+.nav
+    padding: 60px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & h1
+        font-size: 24px
+        font-weight: 400
+        line-height: 28px
+        color: $textColorRed
+
+.breadcrumb
+    list-style: none
+    & li
+        display: inline
+        color: #636363
+        font-size: 14px
+        font-weight: 300
+        line-height: 16px
+        &:last-child
+            font-weight: 700
+            color: $textColorRed
+    li+li:before
+        padding: 5px
+        color: #636363
+        content: "/\00a0"
+
+.product-slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px #EAEAEA solid
+    background-color: #F7F7F7
+    padding-bottom: 42px
+    &__btn
+        cursor: pointer
+        border: none
+        background-color: #2A2A2A26
+        width: 47px
+        height: 47px
+        align-items: center
+        &_r
+            transform: rotate(180deg)
+        & svg
+            margin: 0 auto
+        &:hover path
+            fill: $textColorRed
+
+.product-description
+    margin-bottom: 128px
+
+.pd
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px #EAEAEA solid
+    margin-top: -65px
+    & h5
+        font-size: 14px
+        font-weight: 400
+        line-height: 16px
+        color: $textColorRed
+        margin-top: 64.5px
+    &__line
+        width: 63px
+        height: 3px
+        background-color: $textColorRed2
+        margin-top: 12px
+    & h4
+        font-size: 18px
+        font-weight: 400
+        line-height: 21px
+        color: $textColor
+        margin-top: 12px
+    & p
+        font-size: 14px
+        line-height: 16px
+        font-weight: 400
+        text-align: center
+        color: $textColor
+        margin-top: 48px
+    & h3
+        font-weight: 400
+        font-size: 24px
+        line-height: 18px
+        color: $textColorRed2
+        margin-top: 32px
+    & hr
+        margin-top: 64.5px
+        width: 641px
+        border: 1px solid #EAEAEA
+    &__variable
+        margin-top: 64.5px
+        display: flex
+        gap: 23px
+        &_s
+            display: block
+            font-size: 14px
+            line-height: 16px
+            font-weight: 400
+            border: none
+            color: #6F6E6E
+            cursor: pointer
+            // &:target
+            //     border: none
+    &__btn
+        margin: 63.5px 0 73.5px
+        & button
+            display: flex
+            border: 1px solid #FF6A6A
+            background-color: rgba(0, 0, 0, 0)
+            padding: 14px 57px 14px 24px
+            justify-content: center
+            align-items: center
+            gap: 23px
+            color: #F26376
+            font-size: 16px
+            font-weight: 400px
+            line-height: 19px
+            cursor: pointer
+            text-decoration: none
+
+.product__grid
+    grid-template-rows: auto
+    padding-bottom: 80px
