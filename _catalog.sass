@@ -1,0 +1,212 @@
+.filter-chois
+    display: flex
+    gap: 30px
+    margin-top: 51px
+    margin-bottom: 64px
+
+.filter
+    max-width: 370px
+    width: 100%
+    position: relative
+    &__btn
+        display: flex
+        border: none
+        background-color: #fff
+        cursor: pointer
+        align-items: center
+        gap: 11px
+        font-size: 14px
+        font-weight: 600
+        line-height: 16px
+        &_r
+            color: $textColorRed2
+            margin-bottom: 16px
+            & svg path
+                fill: $textColorRed2
+    &__hidden
+        width: 100%
+        max-width: 360px
+        padding: 13px 16px 16px 16px
+        position: absolute
+        background-color: #fff
+        top: -13px
+        left: -16px
+        box-shadow: 6px 4px 35px 0px #00000036
+        z-index: 5
+        &_cat
+            & h4
+                font-size: 14px
+                line-height: 16px
+                cursor: pointer
+                padding: 8px 0 11px 16px
+                border-left: 5px solid $textColorRed2
+                border-bottom: 1px solid #EBEBEB
+                margin-bottom: 24px
+            & h4:hover
+                color: $textColorRed2
+            & h4:last-child
+                margin-bottom: 0
+        &_li
+            font-size: 14px
+            color: #6F6E6E
+            padding-left: 16px
+            margin-bottom: 24px
+            & ul
+                display: flex
+                flex-direction: column
+                gap: 11px
+                & li
+                    cursor: pointer
+
+.chois
+    display: flex
+    align-items: flex-end
+    gap: 38px
+    z-index: 5
+    &__trending
+        max-width: 132px
+        cursor: pointer
+        &_box
+            position: relative
+            & select
+                font-size: 14px
+                font-weight: 400
+                line-height: 16px
+                color: #6F6E6E
+                border: none
+                padding-right: 10px
+        &_checkboxes
+            position: absolute
+            display: none
+            border: 1px #dadada solid
+            color: #6F6E6E
+            font-size: 14px
+            font-weight: 400
+            line-height: 16px
+            max-width: 132px
+            width: 100%
+            padding: 7px 0 5px 9px
+            background-color: #fff
+            box-shadow: 6px 4px 35px 0px #00000036
+            & label
+                display: block
+                margin-bottom: 6px
+                & input
+                    margin-right: 9px
+            & label:hover
+                background-color: $textColorRed
+        &_over
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+    &__size
+        max-width: 132px
+        cursor: pointer
+        &_box
+            position: relative
+            & select
+                font-size: 14px
+                font-weight: 400
+                line-height: 16px
+                color: #6F6E6E
+                border: none
+                padding-right: 10px
+        &_checkboxes
+            position: absolute
+            display: none
+            border: 1px #dadada solid
+            color: #6F6E6E
+            font-size: 14px
+            font-weight: 400
+            line-height: 16px
+            max-width: 79px
+            width: 100%
+            padding: 7px 0 5px 9px
+            background-color: #fff
+            box-shadow: 6px 4px 35px 0px #00000036
+            & label
+                display: block
+                margin-bottom: 6px
+                & input
+                    margin-right: 9px
+            & label:hover
+                background-color: $textColorRed
+        &_over
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+    &__price
+        cursor: pointer
+        &__size
+            max-width: 132px
+        &_box
+            position: relative
+            & select
+                font-size: 14px
+                font-weight: 400
+                line-height: 16px
+                color: #6F6E6E
+                border: none
+                padding-right: 10px
+        &_checkboxes
+            position: absolute
+            display: none
+            gap: 6px
+            border: 1px #dadada solid
+            color: #6F6E6E
+            font-size: 14px
+            font-weight: 400
+            line-height: 16px
+            max-width: 90px
+            width: 100%
+            padding: 7px 0 5px 9px
+            background-color: #fff
+            box-shadow: 6px 4px 35px 0px #00000036
+            & label
+                display: block
+                margin-bottom: 6px
+                & input
+                    margin-right: 9px
+            & label:hover
+                background-color: $textColorRed
+        &_over
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+
+.product-page
+    margin: 0 auto 96px auto
+    max-width: 284px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px 16px
+    border: 1px solid #EBEBEB
+    border-radius: 5px
+    &:last-child
+        // transform: rotate(180deg)
+    &__number
+        width: 100%
+        display: flex
+        justify-content: space-evenly
+        & a
+            font-size: 16px
+            font-weight: 300
+            line-height: 19px
+            color: #c4c4c4
+            position: relative
+            &:hover
+                color: $textColorRed
+            &:last-child::before
+                position: absolute
+                content: '.....'
+                left: -19px
+                z-index: 9
+                font-size: 18px
+
