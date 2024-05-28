@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   scroll-behavior: smooth;
   width: 100%;
@@ -83,10 +87,11 @@ header {
 .menu__burger {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 75px;
   width: 232px;
   background-color: #ffffff;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
+  z-index: 5;
 }
 
 .menu__x {
@@ -1074,4 +1079,13 @@ nav {
   left: -19px;
   z-index: 9;
   font-size: 18px;
+}
+.product-page__number_rotate {
+  transform: rotate(180deg);
+}
+.product-page svg:hover {
+  cursor: pointer;
+}
+.product-page svg:hover path:hover {
+  fill: #F16D7F;
 }/*# sourceMappingURL=style.css.map */
