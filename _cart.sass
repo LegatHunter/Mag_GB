@@ -1,0 +1,63 @@
+.cart
+    margin: 96px auto 128px
+    &__product
+        display: flex
+        flex-direction: column
+        gap: 40px
+        &_img
+            width: 262px
+        &_i
+            max-width: 652px
+            display: flex
+            border: 1px solid #EAEAEA
+            box-shadow: 17px 19px 24px 0px #00000021
+        &_text
+            display: flex
+            justify-content: space-between
+            max-width: 390px
+            width: 100%
+            padding: 22px 22px 62px 31px
+            & h2
+                margin-bottom: 42px
+                font-size: 24px
+                font-weight: 400
+                line-height: 28px
+                color: #222222
+            & h4
+                margin-bottom: 6px
+                font-size: 22px
+                font-weight: 400
+                line-height: 26px
+        &_close button
+            border: none
+            background-color: #fff
+            cursor: pointer
+        &_btn
+            max-width: 652px
+            display: flex
+            justify-content: space-between
+            margin-top: 32px
+            & button
+                cursor: pointer
+                background-color: #fff
+                padding: 17px 40px
+                border: 1px solid #A4A4A4
+                font-size: 14px
+                font-weight: 400
+                line-height: 16px
+                &:hover
+                    background-color: $textColorRed
+                    color: white
+                    transition: .3s
+    &__span
+        color: #575757
+        &_red
+            color: $textColorRed2
+
+
+.quantity
+    display: flex
+    gap: 24px
+    & h4:last-child
+        padding: 1px 16px
+        border: 1px solid #EAEAEA
