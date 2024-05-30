@@ -1296,4 +1296,25 @@ nav {
 .quantity h4:last-child {
   padding: 1px 16px;
   border: 1px solid #EAEAEA;
+}
+
+.registration {
+  display: flex;
+}
+
+.reg__form {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.reg__form_input {
+  height: 45px;
+  padding-left: 17px;
+  border: 1px solid #A4A4A4;
+}
+.reg__form_input::-webkit-input-placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
 }/*# sourceMappingURL=style.css.map */
