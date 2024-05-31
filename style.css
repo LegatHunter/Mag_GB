@@ -1299,7 +1299,10 @@ nav {
 }
 
 .registration {
+  margin-top: 64px;
+  margin-bottom: 96px;
   display: flex;
+  gap: 128px;
 }
 
 .reg__form {
@@ -1307,14 +1310,123 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.reg__form h6 {
+  color: #222;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.reg__form p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  color: #B1B1B1;
+  margin-bottom: 39px;
+}
 .reg__form_input {
   height: 45px;
   padding-left: 17px;
   border: 1px solid #A4A4A4;
+  margin-bottom: 20px;
+}
+.reg__form_input-ln {
+  margin-bottom: 31px;
+}
+.reg__form_input-p {
+  margin-bottom: 15px;
+}
+.reg__form_input-radio {
+  margin-bottom: 33px;
+}
+.reg__form_input-radio input[type=radio] {
+  cursor: pointer;
+  position: relative;
+  height: 17px;
+  width: 17px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.reg__form_input-radio input[type=radio]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #A4A4A4;
+}
+.reg__form_input-radio input[type=radio]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+.reg__form_input-radio label {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.2px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 .reg__form_input::-webkit-input-placeholder {
   color: #B1B1B1;
   font-size: 13px;
   font-weight: 400;
   line-height: 15px;
+}
+.reg__form_btn {
+  max-width: 167px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 29px;
+  background-color: #F16D7F;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  cursor: pointer;
+}
+.reg__form_btn:hover {
+  transition: 0.3s;
+  color: #F16D7F;
+  background-color: #fff;
+}
+.reg__form_btn:hover path {
+  transition: 0.3s;
+  fill: #F16D7F;
+}
+
+.reg-inf {
+  max-width: 652px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.reg-inf__check {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reg-inf__check_i {
+  display: flex;
+  gap: 22px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
