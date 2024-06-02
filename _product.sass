@@ -2,7 +2,6 @@ $textColorRed: #F16D7F
 $textColorRed2: #EF5B70
 $textColor: #4D4D4D
 
-
 nav
     background: #F8F3F4
 
@@ -29,9 +28,9 @@ nav
             font-weight: 700
             color: $textColorRed
     li+li:before
-        padding: 5px
-        color: #636363
-        content: "/\00a0"
+            padding: 5px
+            color: #636363
+            content: "/\00a0"
 
 .product-slider
     display: flex
@@ -141,4 +140,16 @@ nav
 .product__grid
     grid-template-rows: auto
     padding-bottom: 80px
-    
+
+@media (max-width: 1139px) and (min-width: 768px)
+    .pd
+        margin-top: 0
+        max-width: 100%
+    .product
+        margin-top: 128px
+    .hidden
+        display: none
+    .card4
+        order: 1
+    .card3
+        order: 0
