@@ -10,6 +10,7 @@ nav
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
     & h1
         font-size: 24px
         font-weight: 400
@@ -153,3 +154,39 @@ nav
         order: 1
     .card3
         order: 0
+
+@media (max-width: 767px)
+    .product-slider
+        padding: 85px 0
+    .product-slider__img
+        position: relative
+    .product-slider__btn
+        position: absolute
+        z-index: 5
+    .product-slider__btn_r
+        right: 0
+    .pd
+        margin-top: 0
+        max-width: 100%
+        border: none
+        border-bottom: 1px #EAEAEA solid
+        width: 100%
+        &__btn
+            margin-bottom: 64px
+        & p
+            max-width: 326px
+            line-height: 20px
+    .pd hr
+        width: 175px
+        margin-top: 32px
+    .pd__variable
+        margin-top: 49px
+    .product__description
+        margin-bottom: 0px
+    .product__product
+        margin-top: 64px
+    .product__grid_p
+        margin-bottom: 64px
+        padding-bottom: 0
+    .pd__variable_s
+        font-size: 10px
