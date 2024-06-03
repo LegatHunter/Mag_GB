@@ -58,6 +58,16 @@
                 & li
                     cursor: pointer
 
+.breadcrumb a
+    &:link
+        color: #636363
+    &:visited
+        color: #636363
+    &:hover
+        color: $textColorRed2
+    &:focus
+        color: $textColorRed2
+
 .chois
     display: flex
     align-items: flex-end
@@ -221,4 +231,8 @@
         margin-bottom: 63px
     .filter-chois
         margin-top: 24px
+        margin-bottom: 40px
+    .catalog__hidden
+        display: none
+    .grid__catalog
         margin-bottom: 40px
