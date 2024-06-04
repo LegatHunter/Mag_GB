@@ -17,11 +17,9 @@
         <header>
             <section class="header container">
                 <div class="logo__search">
-                    <button class="logo">
-                        <a href="./index.html"
-                            ><img src="./img/logo.png" alt="logo"
-                        /></a>
-                    </button>
+                    <a class="logo" href="./index.html"
+                        ><img src="./img/logo.png" alt="logo"
+                    /></a>
                     <button class="search">
                         <img src="./img/Search.svg" alt="search" />
                     </button>
@@ -31,16 +29,12 @@
                         <button class="menu">
                             <img src="./img/Menu.svg" alt="Menu" />
                         </button>
-                        <button class="menu hidden">
-                            <a href="./registration.html">
-                                <img src="./img/lk.svg" alt="Person" />
-                            </a>
-                        </button>
-                        <button class="menu hidden">
-                            <a href="./cart.html">
-                                <img src="./img/Cart.svg" alt="Cart" />
-                            </a>
-                        </button>
+                        <a class="menu hidden" href="./registration.html">
+                            <img src="./img/lk.svg" alt="Person" />
+                        </a>
+                        <a class="menu hidden" href="./cart.html">
+                            <img src="./img/Cart.svg" alt="Cart" />
+                        </a>
                     </div>
                     <div class="five hidden"><span>5</span></div>
                 </div>
@@ -49,7 +43,7 @@
         <div class="menu__burger hidden__menu">
             <div class="menu__x">
                 <button class="x">
-                    <img src="./img/x.svg" alt="" />
+                    <img src="./img/x.svg" alt="Закрыть" />
                 </button>
                 <h5>MENU</h5>
                 <div class="man">
@@ -112,7 +106,7 @@
                     </button>
                     <div class="filter__hidden hidden__menu">
                         <button class="filter__btn filter__btn_r">
-                            <p>FILTER</p>
+                            <p class="catalog__hidden_t">FILTER</p>
                             <svg
                                 width="15"
                                 height="10"
@@ -159,13 +153,15 @@
                             </div>
                             <div class="chois__trending_checkboxes">
                                 <label for="one">
-                                    <input type="checkbox" />NEW</label
+                                    <input type="checkbox" id="one" />NEW</label
                                 >
                                 <label for="two">
-                                    <input type="checkbox" />Old</label
+                                    <input type="checkbox" id="two" />Old</label
                                 >
                                 <label for="three">
-                                    <input type="checkbox" />Immortal</label
+                                    <input
+                                        type="checkbox"
+                                        id="three" />Immortal</label
                                 >
                             </div>
                         </div>
@@ -181,17 +177,19 @@
                                 <div class="chois__size_over"></div>
                             </div>
                             <div class="chois__size_checkboxes">
-                                <label for="one">
-                                    <input type="checkbox" />XS</label
+                                <label for="one1">
+                                    <input type="checkbox" id="one1" />XS</label
                                 >
-                                <label for="two">
-                                    <input type="checkbox" />S</label
+                                <label for="two1">
+                                    <input type="checkbox" id="two1" />S</label
                                 >
-                                <label for="three">
-                                    <input type="checkbox" />M</label
+                                <label for="three1">
+                                    <input
+                                        type="checkbox"
+                                        id="three1" />M</label
                                 >
-                                <label for="four">
-                                    <input type="checkbox" />L</label
+                                <label for="four1">
+                                    <input type="checkbox" id="four1" />L</label
                                 >
                             </div>
                         </div>
@@ -207,17 +205,25 @@
                                 <div class="chois__price_over"></div>
                             </div>
                             <div class="chois__price_checkboxes">
-                                <label for="one">
-                                    <input type="checkbox" />25$</label
+                                <label for="one2">
+                                    <input
+                                        type="checkbox"
+                                        id="one2" />25$</label
                                 >
-                                <label for="two">
-                                    <input type="checkbox" />50$</label
+                                <label for="two2">
+                                    <input
+                                        type="checkbox"
+                                        id="two2" />50$</label
                                 >
-                                <label for="three">
-                                    <input type="checkbox" />75$</label
+                                <label for="three2">
+                                    <input
+                                        type="checkbox"
+                                        id="three2" />75$</label
                                 >
-                                <label for="four">
-                                    <input type="checkbox" />100$</label
+                                <label for="four2">
+                                    <input
+                                        type="checkbox"
+                                        id="four2" />100$</label
                                 >
                             </div>
                         </div>
@@ -227,7 +233,7 @@
             <section class="catalog-product container">
                 <div class="grid__product grid__catalog">
                     <div class="card1 cards">
-                        <img src="./img/P_1.jpg" alt="" />
+                        <img src="./img/P_1.jpg" alt="Продукт 1" />
                         <div class="card1__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -240,15 +246,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card2 cards">
-                        <img src="./img/P_7.jpg" alt="" />
+                        <img src="./img/P_7.jpg" alt="Продукт 7" />
                         <div class="card2__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -261,15 +268,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card3 cards catalog__hidden catalog__hidden_t">
-                        <img src="./img/P_3.jpg" alt="" />
+                        <img src="./img/P_3.jpg" alt="Продукт 3" />
                         <div class="card3__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -282,15 +290,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card4 cards">
-                        <img src="./img/P_4.jpg" alt="" />
+                        <img src="./img/P_4.jpg" alt="Продукт 4" />
                         <div class="card4__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -303,15 +312,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card5 cards">
-                        <img src="./img/P_8.jpg" alt="" />
+                        <img src="./img/P_8.jpg" alt="Продукт 8" />
                         <div class="card5__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -324,15 +334,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card6 cards">
-                        <img src="./img/P_9.jpg" alt="" />
+                        <img src="./img/P_9.jpg" alt="Продукт 9" />
                         <div class="card6__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -345,15 +356,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card7 cards">
-                        <img src="./img/P_10.jpg" alt="" />
+                        <img src="./img/P_10.jpg" alt="Продукт 10" />
                         <div class="card6__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -366,15 +378,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card8 cards">
-                        <img src="./img/P_11.jpg" alt="" />
+                        <img src="./img/P_11.jpg" alt="Продукт 11" />
                         <div class="card6__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -387,15 +400,16 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card9 cards">
-                        <img src="./img/P_12.jpg" alt="" />
+                        <img src="./img/P_12.jpg" alt="Продукт 12" />
                         <div class="card6__text pad">
                             <h6>ELLERY X&nbsp;M&rsquo;O CAPSULE</h6>
                             <p class="card__info">
@@ -408,8 +422,9 @@
                             <div class="card__hover">
                                 <div class="card__hover__button">
                                     <button>
-                                        <img src="./img/Cart.svg" alt="" />Add
-                                        to&nbsp;Cart
+                                        <img
+                                            src="./img/Cart.svg"
+                                            alt="Корзина" />Add to&nbsp;Cart
                                     </button>
                                 </div>
                             </div>
@@ -436,7 +451,8 @@
                         <a href="#">6</a>
                         <a href="#">20</a>
                     </div>
-                    <svg class="product-page__number_rotate"
+                    <svg
+                        class="product-page__number_rotate"
                         width="13"
                         height="23"
                         viewBox="0 0 13 23"
@@ -451,7 +467,7 @@
             <section class="predlog">
                 <div class="predlog__cont container">
                     <div class="delivery predlog__pad">
-                        <img src="./img/Delivery.svg" alt="" />
+                        <img src="./img/Delivery.svg" alt="Доставка" />
                         <h5>Free Delivery</h5>
                         <p>
                             Worldwide delivery on&nbsp;all. Authorit tively
@@ -460,7 +476,7 @@
                         </p>
                     </div>
                     <div class="sales predlog__pad">
-                        <img src="./img/Sales.svg" alt="" />
+                        <img src="./img/Sales.svg" alt="Скидки" />
                         <h5>Sales &amp;&nbsp;discounts</h5>
                         <p>
                             Worldwide delivery on&nbsp;all. Authorit tively
@@ -469,7 +485,7 @@
                         </p>
                     </div>
                     <div class="quality predlog__pad">
-                        <img src="./img/Quality.svg" alt="" />
+                        <img src="./img/Quality.svg" alt="Корона" />
                         <h5>Quality assurance</h5>
                         <p>
                             Worldwide delivery on&nbsp;all. Authorit tively
@@ -482,7 +498,7 @@
             <section class="subscribe">
                 <div class="subscribe__cont container">
                     <div class="subscribe__info">
-                        <img src="./img/Ava.png" alt="" />
+                        <img src="./img/Ava.png" alt="Аватарка" />
                         <p>
                             &laquo;Vestibulum quis porttitor dui! Quisque
                             viverra nunc&nbsp;mi,

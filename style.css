@@ -115,6 +115,7 @@ header {
   line-height: 16.8px;
 }
 .menu__x li {
+  cursor: pointer;
   color: #6f6e6e;
   font-weight: 400;
   font-size: 14px;
@@ -597,9 +598,6 @@ footer {
   .footer__cont {
     padding: 30px 32px;
   }
-  .menu__burger {
-    display: none;
-  }
   .subscribe {
     background-image: url(./img/Backp.jpg);
   }
@@ -923,12 +921,12 @@ nav {
   gap: 30px;
   margin-top: 51px;
   margin-bottom: 64px;
+  position: relative;
 }
 
 .filter {
   max-width: 370px;
   width: 100%;
-  position: relative;
 }
 .filter__btn {
   display: flex;
@@ -957,7 +955,7 @@ nav {
   top: -13px;
   left: -16px;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
-  z-index: 5;
+  z-index: 20;
 }
 .filter__hidden_cat h4 {
   font-size: 14px;
@@ -1213,8 +1211,14 @@ nav {
     justify-content: center;
     padding: 24px 0 46px;
   }
+  .filter__hidden {
+    max-width: 260px;
+  }
   .filter-chois {
     gap: 61.5px;
+  }
+  .catalog__hidden {
+    max-width: 360px;
   }
   .catalog__hidden_t {
     display: none;
