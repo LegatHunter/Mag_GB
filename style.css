@@ -293,6 +293,11 @@ header {
   cursor: pointer;
   text-decoration: none;
 }
+.card__hover button:active {
+  transition: 0.1s;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+}
 
 .cards {
   position: relative;
@@ -386,6 +391,14 @@ header {
   font-size: 13.97px;
   line-height: 16.77px;
   color: #fbfbfb;
+}
+
+.cart-items h5 {
+  font-size: 30px;
+  color: #222222;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 96px;
 }
 
 .subscribe {
@@ -1311,6 +1324,7 @@ nav {
   line-height: 26px;
 }
 .cart__product_close button {
+  width: 18px;
   border: none;
   background-color: #fff;
   cursor: pointer;
@@ -1447,6 +1461,12 @@ nav {
   border: 1px solid #A4A4A4;
   background-color: #F5F3F3;
   color: #000000;
+}
+
+.cart-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .get {
